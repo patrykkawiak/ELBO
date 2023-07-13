@@ -1,0 +1,85 @@
+@use '../abstracts' as *;
+
+.team {
+  padding: 4rem 0;
+  &-groups {
+    margin-top: 4rem;
+  }
+  &-group {
+    padding: 2rem 0;
+    background-position: center;
+    overflow: hidden;
+    .wrapper {
+      position: relative;
+    }
+    &:nth-child(odd){
+      background-color: $darker-red;
+      background-image: url('../../../background_waves_red.svg');
+      color: $card-color;
+    }
+    &:nth-child(even){
+      background-color: $card-color;
+      background-image: url('../../../background_waves_white.svg');
+      color: #000;
+      .team-group-member-link {
+        color: $light-black;
+      }
+    }
+    &-icon {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      &.customer-service{
+        height: 500px;
+        left: 0;
+        transform: translateY(40%);
+      }
+      &.warehouse {
+        height: 300px;
+        right: 0;
+        transform: translateY(40%);
+      }
+      &.trading {
+        height: 270px;
+        transform: translateY(40%)
+      }
+    }
+    &-heading {
+      position: relative;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 3rem;
+      z-index: 10;
+    }
+    &-members {
+      position: relative;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 0 2rem;
+      z-index: 10;
+    }
+    &-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-name {
+        margin-bottom: 2rem;
+      }
+      &-link {
+        color: $gray-text;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px){
+  .team {
+    &-group {
+      &-icon {
+        display: block;
+      }
+    }
+  }
+}
