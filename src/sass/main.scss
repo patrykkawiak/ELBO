@@ -1,0 +1,35 @@
+@use 'base' as *;
+@use 'abstracts' as *;
+@use 'components' as *;
+@use 'layouts' as *;
+@use 'utilities' as *;
+
+body {
+	font-family: 'Poppins Light', sans-serif;
+	background-color: #fff;
+}
+@media (min-width: 576px) {
+	html {
+		font-size: 68.75%;
+	}
+}
+@media (min-width: 768px) {
+	html {
+		font-size: 75%;
+	}
+}
+@media (min-width: 992px) {
+	html {
+		font-size: 81.25%;
+	}
+}
+@media (min-width: 1200px) {
+	html {
+		font-size: 87.5%;
+	}
+}
+@media (min-width: 1400px) {
+	html {
+		font-size: 93.75%;
+	}
+}

@@ -1,0 +1,21 @@
+git clone https://github.com/patrykkawiak/ELBO.git
+
+git remote add ELBO https://github.com/patrykkawiak/ELBO.git
+
+git checkout --track ELBO/nazwa_brancha ( tylko za pierwszym razem) | git checkout nazwa_brancha
+
+git pull https://github.com/patrykkawiak/ELBO.git - pobieranie plikow z maina do brancha
+
+cd tbsk
+git add .
+git commit -m "tekst"
+git push -u ELBO <nazwa_brancha>
+git checkout main
+git merge <nazwa_brancha>
+git push -u ELBO main
+
+git pull - po wejsciu 
+git log - kto co robil
+
+===================================
+
