@@ -33,10 +33,6 @@
   display: inline-block;
 }
 
-.bold {
-  font-family: 'Poppins Medium';
-}
-
 .tac {
   text-align: center;
 }
@@ -45,28 +41,4 @@
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1400px;
-}
-
-
-.arrow {
-  position: relative;
-  height: 60px;
-  width: 3px;
-  background-color: $orange-main;
-  margin: 4rem auto;
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 50%;
-    width: 100%;
-    background-color: $orange-main;
-  }
-  &::before {
-    transform: rotate(-37.5deg) translate(-8.5px, -3px);
-  }
-  &::after {
-    transform: rotate(37.5deg) translate(8.5px, -3px);
-  }
 }
