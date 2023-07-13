@@ -10,6 +10,14 @@
 	}
 	&-heading {
 		font-size: 2.8rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	&-subheading {
+		font-size: 2.2rem;
+	}
+	&-highlight {
+		color: $main-red;
 	}
 	&-text {
 		font-size: 1.5rem;
@@ -17,20 +25,16 @@
 			font-size: 1.8rem;
 		}
 	}
-	&-subheading {
-		font-size: 2rem;
-		color: rgb(61, 61, 61);
+	&-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: #0000008f;
 	}
-  &-shadow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #0000008f;
-  }
 }
 
 .inline-block {
-  display: inline-block;
+	display: inline-block;
 }
 
 .bold {
@@ -42,7 +46,7 @@
 }
 
 .tac {
-  text-align: center;
+	text-align: center;
 }
 
 .wrapper {
