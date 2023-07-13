@@ -1,4 +1,5 @@
 import viteImageMin from 'vite-plugin-imagemin'
+import { fileURLToPath, URL } from 'node:url'
 
 export default () => {
   return {
@@ -34,5 +35,10 @@ export default () => {
         }
       }),
     ],
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url))
+      }
+    }
   }
 }
