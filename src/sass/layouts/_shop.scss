@@ -1,0 +1,69 @@
+@use '../abstracts' as *;
+.shop {
+    padding: 4rem 2rem;
+    background-image: url('../../../public/background-waves-gray.svg');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    &-box {
+        padding: 4rem;
+        background-color: $darker-red;
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        max-width: 35rem;
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+        }
+        &-heading {     
+            color: white;
+        }
+        &-text {
+            color: white;
+        }
+    }
+    &-btn {
+        padding: 1rem 1.5rem;
+        background-color: #fff;
+        width: max-content;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .shop {
+        margin: 4rem 0;
+        background-image: none;
+        height: 40rem;
+        padding: 0; 
+        position: relative;
+        justify-content: flex-start;
+
+
+        &-box {
+            position: absolute;
+            height: 80%;
+            right: 10rem;
+            top: 50%;
+            transform: translateY(-50%);
+            gap: 0;
+            justify-content: space-between;
+            z-index: 10;
+        }
+        &-bgi {
+            width: 60%;
+            background-image: url('@/img/shop.jpeg');
+            background-position: center;
+            background-size: cover;
+        }
+        &-waves {
+            width: 40%;
+            background-image: url('../../../public/background-waves-gray.svg');
+            background-position: center;
+        }
+    }
+}
