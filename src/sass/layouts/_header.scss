@@ -4,6 +4,7 @@
   position: relative;
   background-image: url('@/img/elbo_zwykle.png');
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   padding-top: $nav-height;

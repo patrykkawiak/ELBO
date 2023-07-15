@@ -1,0 +1,61 @@
+@use '../abstracts' as *;
+
+.breaker {
+    padding: 4rem 2rem;
+    &-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        
+    }
+    &-card {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.181);
+        border-bottom: 2px solid $main-red;
+        gap: 2rem;
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            i {
+                font-size: 6rem;
+                color: $main-red;
+            }
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+        &-text {
+            color: rgba(0, 0, 0, 0.56);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .breaker {
+        padding: 4rem 2rem 2rem 1rem;
+        &-cards {
+            flex-direction: row;
+            gap: 2rem;
+        }
+        &-card {
+            border-bottom: none;
+            box-shadow: none;
+            transition: .3s;
+        }
+        &-card:focus, &-card:hover {
+            outline: none;
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.181);
+        border-bottom: 2px solid $main-red;
+        transform: translateY(-10px);
+
+        }
+    }
+}
