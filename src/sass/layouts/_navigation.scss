@@ -20,8 +20,10 @@
       background-color: #fff;
       box-shadow: 0 0 1px black;
       opacity: 0;
-      transition: opacity .2s;
       z-index: 5;
+    }
+    &.loaded::after {
+      transition: opacity .2s;
     }
     .wrapper {
       position: relative;
