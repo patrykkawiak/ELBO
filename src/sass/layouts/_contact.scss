@@ -1,0 +1,98 @@
+@use '../abstracts' as *;
+
+.contact {
+  &-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+  .upper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: $card-color;
+    border: 1px solid $border-light-color;
+    overflow: hidden;
+    &-icon {
+      position: absolute;
+      left: 0;
+      height: 150%;
+      filter: $light-red-filter;
+    }
+    &-heading {
+      position: relative;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      z-index: 10;
+    }
+    &-content {
+      position: relative;
+      z-index: 10;
+    }
+    &.opening {
+      .contact-card-icon {
+        left: -5%;
+        bottom: 0;
+        transform: translateY(30%);
+      }
+    }
+    &.mail {
+      .contact-card-icon {
+        height: 130%;
+        left: -10%;
+      }
+    }
+    &.tel {
+      .contact-card-icon {
+        height: 150%;
+        bottom: 0;
+        transform: translateY(25%)
+      }
+    }
+  }
+  &-info {
+    text-align: center;
+    margin-top: 4rem;
+    small {
+      display: block;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      color: $light-black;
+    }
+  }
+}
+
+@media (min-width: 340px){
+  .contact{
+    &-card {
+      padding: 2rem 6rem;
+    }
+  }
+}
+
+@media (min-width: 576px){
+  .contact {
+    &-card {
+      &.tel {
+        .contact-card-content {
+          display: flex;
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}

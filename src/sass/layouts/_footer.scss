@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.footer {
+  padding-inline: 0;
+  &-partners {
+    background-color: $gray-section;
+  }
+  &-info {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: $darker-red;
+  }
+}

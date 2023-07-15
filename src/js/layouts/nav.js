@@ -5,7 +5,6 @@ const mobileLinks = document.querySelectorAll('.nav-mobile-list .nav-list-item a
 const navListShadow = document.querySelector('.nav-mobile-list-shadow')
 
 const toggleScrolledClass = () => {
-  console.log('123');
   if(window.scrollY > 0 || window.innerWidth < 768) {
     nav.classList.add('scrolled')
   }
