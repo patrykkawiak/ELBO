@@ -6,6 +6,7 @@
   padding: .7em 1.5em;
   font-family: inherit;
   border: 0;
+  cursor: pointer;
   &::after {
     content: attr(data-content) " ";
     display: flex;
@@ -28,6 +29,7 @@
     &::after {
       background-color: $card-color;
       color: $darker-red;
+      border: 1px solid $darker-red;
     }
   }
   &.secondary {
