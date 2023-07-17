@@ -67,3 +67,11 @@
         }
     }
 }
+
+@media (min-width: 1600px) {
+  .shop {
+      &-box {
+          right: 15%;
+      }
+  }
+}
