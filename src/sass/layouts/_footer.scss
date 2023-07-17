@@ -15,7 +15,7 @@
 animation: move 20s linear infinite;
 display: flex;
 gap: 4rem;
-width: calc(20rem * 10);
+width: calc(20rem * 11);
     }
     &-slide{
       height: 10rem;
@@ -40,6 +40,6 @@ width: calc(20rem * 10);
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-10rem * 11));
+    transform: translateX(calc(-10rem * 5.5));
   }
 }
