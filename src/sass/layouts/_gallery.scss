@@ -71,7 +71,7 @@
         width: 100%;
         height: 100%;
         background-color: #000;
-        opacity: .9;
+        opacity: .6;
         pointer-events: none;
         transition: opacity .3s;
       }
@@ -93,6 +93,9 @@
       margin-top: 7rem;
     }
   }
+}
+
+@media(min-width: 768px){
   .slider{
     &-img {
       &-box {
