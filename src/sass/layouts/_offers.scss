@@ -4,8 +4,8 @@
         margin-bottom: 4rem;
     }
     &-cards{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        justify-content: center;
         align-items: center;
         gap: 4rem;
     }
@@ -42,13 +42,15 @@
 @media (min-width: 768px) {
     .offers {
         &-cards {
-            flex-direction: row;
-            justify-content: center;
-            
+            grid-template-columns: repeat(2, 1fr);
         }
         &-card {
+            height: 100%;
             max-width: 30rem;
             box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.046);
+            &:nth-child(odd){
+              justify-self: flex-end;
+            }
             &-content {
                 height:auto;
             }
@@ -58,7 +60,6 @@
                 justify-content: center;
                 align-items: center;
                 img {
-                    height: 80%;
                     width: 80%;
                    
                 }

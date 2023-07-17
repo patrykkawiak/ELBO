@@ -15,8 +15,9 @@
         &-content {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             gap: 2rem;
-
+            height: 100%;
         }
         &-heading {     
             color: white;
@@ -46,7 +47,7 @@
 
         &-box {
             position: absolute;
-            height: 80%;
+            height: 70%;
             right: 10rem;
             top: 50%;
             transform: translateY(-50%);

@@ -1,6 +1,8 @@
 @use '../abstracts' as *;
 
 .breaker {
+    display: flex;
+    justify-content: center;
     padding: 4rem 2rem;
     &-cards {
         display: flex;
@@ -8,9 +10,11 @@
         gap: 4rem;
         align-items: center;
         justify-content: center;
+        width: max-content;
         
     }
     &-card {
+        width: 100%;
         padding: 2rem;
         display: flex;
         flex-direction: column;
