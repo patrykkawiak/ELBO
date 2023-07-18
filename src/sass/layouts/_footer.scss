@@ -34,7 +34,12 @@
 	}
 	&-content {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
+		align-items: center;
+		a {
+			width: max-content;
+		}
 	}
 }
 
@@ -44,5 +49,14 @@
 	}
 	100% {
 		transform: translateX(calc(calc(-20rem * 9) - 2rem));
+	}
+}
+
+@media (min-width: 576px) {
+	.footer-content {
+		flex-direction: row;
+		a {
+			padding: 1rem;
+		}
 	}
 }
