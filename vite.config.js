@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 export default () => {
   return {
+    base: './',
     plugins: [
       viteImageMin({
         gifsicle: {
