@@ -1,94 +1,94 @@
 @use '../abstracts' as *;
 
 .team {
-  padding: 4rem 0 0 0;
-  &-groups {
-    margin-top: 4rem;
-  }
-  &-group {
-    padding: 4rem 0;
-    background-position: center;
-    overflow: hidden;
-    .wrapper {
-      position: relative;
-    }
-    &:nth-child(odd){
-      background-color: $darker-red;
-      background-image: url('../../../background_waves_red.svg');
-      color: $card-color;
-    }
-    &:nth-child(even){
-      background-color: $card-color;
-      background-image: url('../../../background_waves_white.svg');
-      color: #000;
-      .team-group-member-link {
-        color: $light-black;
-      }
-    }
-    &-icon {
-      display: none;
-      position: absolute;
-      bottom: 0;
+	padding: 4rem 0 0 0;
+	&-groups {
+		margin-top: 4rem;
+	}
+	&-group {
+		padding: 4rem 0;
+		background-position: center;
+		overflow: hidden;
+		.wrapper {
+			position: relative;
+		}
+		&:nth-child(odd) {
+			background-color: $darker-red;
+			background-image: url('./../background_waves_red.svg');
+			color: $card-color;
+		}
+		&:nth-child(even) {
+			background-color: $card-color;
+			background-image: url('./../background_waves_white.svg');
+			color: #000;
+			.team-group-member-link {
+				color: $light-black;
+			}
+		}
+		&-icon {
+			display: none;
+			position: absolute;
+			bottom: 0;
 
-      &.customer-service{
-        height: 400%;
-        max-height: 1000px;
-        left: 0;
-        transform: translateY(40%);
-        opacity: 0.7;
-      }
-      &.warehouse {
-        height: 200%;
-        right: 0;
-        transform: translateY(40%);
-      }
-      &.trading {
-        height: 200%;
-        transform: translate(5%, 40%);
-        opacity: .6
-      }
-      &.booking {
-        right: 0;
-        height: 175%;
-        transform: translate(2%, 25%)
-      }
-    }
-    &-heading {
-      position: relative;
-      text-align: center;
-      font-weight: bold;
-      margin-bottom: 4rem;
-      z-index: 10;
-    }
-    &-members {
-      position: relative;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      gap: 3rem;
-      padding: 0 2rem;
-      z-index: 10;
-    }
-    &-member {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      &-name {
-        margin-bottom: 2rem;
-      }
-      &-link {
-        color: $gray-text;
-      }
-    }
-  }
+			&.customer-service {
+				height: 400%;
+				max-height: 1000px;
+				left: 0;
+				transform: translateY(40%);
+				opacity: 0.7;
+			}
+			&.warehouse {
+				height: 200%;
+				right: 0;
+				transform: translateY(40%);
+			}
+			&.trading {
+				height: 200%;
+				transform: translate(5%, 40%);
+				opacity: 0.6;
+			}
+			&.booking {
+				right: 0;
+				height: 175%;
+				transform: translate(2%, 25%);
+			}
+		}
+		&-heading {
+			position: relative;
+			text-align: center;
+			font-weight: bold;
+			margin-bottom: 4rem;
+			z-index: 10;
+		}
+		&-members {
+			position: relative;
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			gap: 3rem;
+			padding: 0 2rem;
+			z-index: 10;
+		}
+		&-member {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&-name {
+				margin-bottom: 2rem;
+			}
+			&-link {
+				color: $gray-text;
+			}
+		}
+	}
 }
 
-@media (min-width: 576px){
-  .team {
-    &-group {
-      &-icon {
-        display: block;
-      }
-    }
-  }
+@media (min-width: 576px) {
+	.team {
+		&-group {
+			&-icon {
+				display: block;
+			}
+		}
+	}
 }
