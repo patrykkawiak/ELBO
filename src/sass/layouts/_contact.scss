@@ -1,6 +1,13 @@
 @use '../abstracts' as *;
 
 .contact {
+  .facebook-icon {
+    width: max-content;
+    font-size: 4rem;
+    color: $main-red;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
   &-cards {
     display: flex;
     flex-direction: column;
@@ -70,7 +77,6 @@
     small {
       display: block;
       font-size: 1.5rem;
-      margin-top: 2rem;
       color: $light-black;
     }
   }
