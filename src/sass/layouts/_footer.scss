@@ -1,45 +1,48 @@
 @use '../abstracts' as *;
 
 .footer {
-  padding-inline: 0;
-  &-partners {
-    background-color: $gray-section;
-    display: flex;
-    align-items: center;
-    height: 10rem;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: auto;
-    &-track {
-animation: move 20s linear infinite;
-display: flex;
-gap: 4rem;
-width: calc(20rem * 11);
-    }
-    &-slide{
-      height: 10rem;
-      width: 20rem;
-      img {
-        height: 100%;
-        width: 100%;
-      }
-    }
-  }
-  &-info {
-    display: block;
-    padding: 2rem;
-    text-align: center;
-    color: #fff;
-    background-color: $darker-red;
-  }
+	padding-inline: 0;
+	&-partners {
+		display: flex;
+		align-items: center;
+		height: 16rem;
+		margin: auto;
+		overflow: hidden;
+		position: relative;
+		width: auto;
+		&-track {
+			animation: move 20s linear infinite;
+			display: flex;
+			width: calc(20rem * 18);
+			gap: 4rem;
+		}
+		&-slide {
+			height: 10rem;
+			width: 20rem;
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+	&-info {
+		display: block;
+		padding: 2rem;
+		text-align: center;
+		color: #fff;
+		background-color: $darker-red;
+	}
+	&-content {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 @keyframes move {
-  0%{
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-10rem * 5.5));
-  }
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(calc(-20rem * 9) - 2rem));
+	}
 }
