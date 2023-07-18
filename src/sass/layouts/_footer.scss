@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+.footer {
+  padding-inline: 0;
+  &-partners {
+    background-color: $gray-section;
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    &-track {
+animation: move 20s linear infinite;
+display: flex;
+gap: 4rem;
+width: calc(20rem * 11);
+    }
+    &-slide{
+      height: 10rem;
+      width: 20rem;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  &-info {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: $darker-red;
+  }
+}
+
+@keyframes move {
+  0%{
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-10rem * 5.5));
+  }
+}
