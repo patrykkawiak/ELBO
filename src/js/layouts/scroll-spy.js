@@ -9,7 +9,7 @@ export const handleScrollSpy = () => {
 	);
 
 	sections.forEach((sec) => {
-		if (window.scrollY <= sec.offsetTop + sec.offsetHeight - (navHeight + 1)) {
+		if (window.scrollY <= sec.offsetTop + sec.offsetHeight - (navHeight + 5)) {
 			sectionArr.push(sec);
 			const currentSec = document.querySelectorAll(
 				`[href*="${sectionArr[0].dataset.section}"]`
