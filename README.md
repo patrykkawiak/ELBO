@@ -3,7 +3,7 @@
 
 Commercial website for [ELBO Kwidzyn](https://elbokwidzyn.pl/)
 
-🌍 Hosted page: [ELBO Kwidzn](https://elbokwidzyn.pl/)
+🌍 Hosted page: [ELBO Kwidzyn](https://elbokwidzyn.pl/)
 
 
 
