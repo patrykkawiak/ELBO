@@ -1,35 +1,6 @@
 const prev = document.querySelector('.button.prev')
 const next = document.querySelector('.button.next')
-// const sliderTrack = document.querySelector('.slider-track')
 const galleryImgBoxes = document.querySelectorAll('.slider-img-box')
-
-// let index = 1
-// const maxIndex = galleryImgs.length - 1
-
-// const galleryImgWidth = galleryImgs[0].clientWidth
-// console.log(galleryImgWidth * index);
-
-// const handleGallery = () => {
-//   sliderTrack.style.transform = `translateX(Calc(-${galleryImgWidth * index}px + ${galleryImgWidth / 2}px))`
-//   galleryImgs.forEach(img => {
-//     img.classList.remove('active')
-//   })
-//   galleryImgs[index].classList.add('active')
-// }
-
-// prev.addEventListener('click', () => {
-//   if(index === 2){
-//     const prevImg = galleryImgs[maxIndex].cloneNode(true)
-//   }
-//   index--
-//   handleGallery()
-// })
-// next.addEventListener('click', () => {
-//   index++
-//   handleGallery()
-// })
-
-// handleGallery()
 
 const getActiveImg = () => document.querySelector('.slider-img-box.active')
 const getPrevImg = () => document.querySelector('.slider-img-box.prev')
